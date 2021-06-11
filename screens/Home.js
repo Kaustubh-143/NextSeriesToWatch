@@ -41,11 +41,7 @@ const Home =({navigation,route}) => { //props given by stacknavigator
     setLoading(false)}
   }
 
-  const list = JSON.parse(storedValue)
-  setListOfSeasons(list)
-
-  setLoading(false)
-  }
+  
 
 
   const deleteSeason= async (id) => {
@@ -135,7 +131,7 @@ const Home =({navigation,route}) => { //props given by stacknavigator
         
         </ScrollView>
     )
-                                                
+                      }                                        
 
 export default Home;
 
