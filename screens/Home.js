@@ -27,6 +27,10 @@ const Home =({navigation,route}) => { //props given by stacknavigator
 
   const isFocused = useIsFocused();
 
+  useEffect(()=>{
+    getList(); //loads every single time app starts
+  },[isFocused]) //[] is a dependency
+
   const getList = async ()=>{
   setLoading(true)
 
@@ -70,9 +74,9 @@ const Home =({navigation,route}) => { //props given by stacknavigator
     )
   }
 
-  useEffect(()=>{
-    getList(); //loads every single time app starts
-  },[isFocused]) //[] is a dependency
+  // useEffect(()=>{
+  //   getList(); //loads every single time app starts
+  // },[isFocused]) //[] is a dependency
 
    
     return(

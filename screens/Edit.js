@@ -46,7 +46,7 @@ const Edit=({navigation,route}) => {
     const list =await JSON.parse(storedValue)
 
     list.map((singleSeason)=>{
-      if (singleSeason.id==id) {
+      if (singleSeason.id===id) {
         singleSeason.name=name;
         singleSeason.totalSeasons=totalSeasons;
       }

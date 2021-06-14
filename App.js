@@ -23,7 +23,7 @@ const App=()=> {
    options={{
      headerStyle:{
        backgroundColor:"#0f4c75"},
-       title:'LCO NETFLIX APP',
+       title:'NextSeriesToWatch',
        headerTitleStyle:{
          textAlign:'center',
          color:'#00b7c2',
